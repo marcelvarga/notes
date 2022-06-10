@@ -2,4 +2,5 @@
     <string name="app_name">Notes</string>
     <string name="notes">Notes</string>
     <string name="add_note">Add note</string>
+    <string name="packageName">com.marcelvarga.notes</string>
 </resources>
