@@ -32,6 +32,6 @@ public class Note {
         this.lastEditedTime = this.createdTime;
     }
     public String toString(){
-        return noteText;
+        return noteText + " " + uid;
     }
 }
