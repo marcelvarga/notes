@@ -7,8 +7,11 @@
     <EditText
         android:id="@+id/noteText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:importantForAutofill="no"/>
+        android:importantForAutofill="no"
+        android:gravity="top"
+        android:layout_margin="15dp"
+        android:background="@null"/>
 </RelativeLayout>

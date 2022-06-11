@@ -6,10 +6,12 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Dao
-public interface NoteDao {
+public interface NoteDao{
+
     @Query("SELECT * FROM note ORDER BY last_edited")
     public List<Note> getAll();
 
@@ -25,7 +27,9 @@ public interface NoteDao {
     @Delete
     public void delete(Note note);
 
+    @Query("DELETE FROM note WHERE uid= :id")
+    public void deleteById(int id);
+
     @Update
     public void update(Note note);
-
 }
